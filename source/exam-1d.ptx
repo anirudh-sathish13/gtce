@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+<docinfo><document-id>exam-1d</document-id></docinfo>
+<article xml:id="exam-1d"><title>Linear Algebra Sample Exam 1D</title>
+<xi:include href="activities/sample-exam-1d.ptx"/>
+</article></pretext>

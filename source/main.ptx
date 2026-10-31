@@ -49,6 +49,7 @@
 
       <!-- Remove the example and replace with your own activities -->
       <xi:include href="./activities/ws24_7_2.ptx"/>
+      <xi:include href="./activities/sample-exam-1d.ptx"/>
 
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>

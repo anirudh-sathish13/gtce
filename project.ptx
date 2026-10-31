@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!-- This file, the project manifest, provides the overall configuration for your PreTeXt project. To edit the content of your document, open `source/main.ptx`. See https://pretextbook.org/doc/guide/html/processing-CLI.html#cli-project-manifest. -->
-
 <project ptx-version="2">
   <targets>
+    <target name="course" source="main.ptx" format="html" publication="publication.ptx" deploy-dir="course"/>
+    <target name="exam-web" source="exam-1d.ptx" format="html" publication="exam.ptx" deploy-dir="exam"/>
+    <target name="exam-print" source="exam-1d.ptx" format="pdf" publication="exam.ptx" output-filename="sample-exam-1d.pdf" deploy-dir="exam-pdf"><stringparams latex.preamble.late="\AtBeginDocument{\renewcommand{\maketitle}{}\renewcommand{\familydefault}{\sfdefault}\sffamily\renewcommand{\arraystretch}{1.1}\setlength{\extrarowheight}{3pt}\renewcommand{\section}[2][]{\thispagestyle{exam}\begin{center}\bfseries\large #2\end{center}}}&#10;\newpagestyle{exam}{\sethead{\small\itshape Linear Algebra Sample Exam 1D}{}{\small\itshape Page \thepage\ of 1}\setfoot{}{}{}}\AtBeginDocument{\pagestyle{exam}}&#10;"/></target>
+    <target name="exam-latex" source="exam-1d.ptx" format="latex" publication="exam.ptx"/>
+
     <!-- Main course for html or pdf -->
-    <target name="course" source="main.ptx" format="html"
-            publication="publication.ptx" deploy-dir="course" />
-    <target name="print" source="main.ptx" format="pdf"
-            output-filename="course.pdf" publication="publication.ptx" />
+    <target name="print" source="main.ptx" format="pdf" output-filename="course.pdf" publication="publication.ptx"/>
 
     <!--
     <target name="slides" source="slides/slides.ptx" format="revealjs"
@@ -23,20 +24,13 @@
 
 
   <!-- The following targets are used to create stand-alone documents, which could be additional slide decks, pdfs, or SCORM archives. Run with `pretext build slides -i source/slides/[filename.ptx]`, for example. -->
-  <target name="pdf" standalone="yes" format="pdf"
-          output-dir="pdfs" publication="publication_standalone.ptx"/>
-  <target name="slides" standalone="yes" format="revealjs"
-          output-dir="slides" publication="publication-slides.ptx"/>
-  <target name="slides-annotated" standalone="yes" format="revealjs"
-          output-dir="slides" publication="publication-slides-annotated.ptx"/>
-  <target name="scorm" standalone="yes" format="html" compression="scorm"
-          output-dir="scorms" publication="publication_standalone.ptx"/>
+  <target name="pdf" standalone="yes" format="pdf" output-dir="pdfs" publication="publication_standalone.ptx"/>
+  <target name="slides" standalone="yes" format="revealjs" output-dir="slides" publication="publication-slides.ptx"/>
+  <target name="slides-annotated" standalone="yes" format="revealjs" output-dir="slides" publication="publication-slides-annotated.ptx"/>
+  <target name="scorm" standalone="yes" format="html" compression="scorm" output-dir="scorms" publication="publication_standalone.ptx"/>
   </targets>
 </project>
-
-
 <!-- SAMPLE MANIFEST illustrating all options. Defaults are given (mostly).              -->
-
 <!-- <project
         ptx-version="2"
         source="source"

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<worksheet xml:id="sample-exam-1d">
+<title>Linear Algebra Sample Exam 1D</title>
+<page>
+<p><em>Work done on scratch paper will not be graded. You don't need to show your work on pages 1 and 2.</em></p>
+<exercise xml:id="exam-1d-q1"><statement><p>(5 points) Indicate whether the situations are <alert>possible</alert> or <alert>impossible</alert>.</p>
+<tabular width="100%" top="none" bottom="minor"><col width="5%"/><col width="75%"/><col width="10%" halign="center"/><col width="10%" halign="center"/>
+<row bottom="minor"><cell/><cell/><cell>possible</cell><cell>impossible</cell></row>
+<row valign="top" bottom="none"><cell>a)</cell><cell><p><m>A</m> is a <m>5\times4</m> matrix with pivots in every column, <m>\vec b\in\mathbb R^5</m> is not in the span of the columns of <m>A</m>.</p></cell><cell><m>\bigcirc</m></cell><cell><m>\bigcirc</m></cell></row>
+<row valign="top" bottom="none"><cell>b)</cell><cell><p><m>A</m> is a <m>5\times4</m> matrix that has 4 pivotal columns, and the columns of <m>A</m> are linearly dependent.</p></cell><cell><m>\bigcirc</m></cell><cell><m>\bigcirc</m></cell></row>
+<row valign="top" bottom="none"><cell>c)</cell><cell><p>Vector <m>\vec x</m> is in <m>\mathbb R^n</m>, every row of the <m>m\times n</m> matrix <m>A</m> contains a pivot, and the linear system <m>A\vec x=\vec b</m> has an infinite number of solutions for some <m>\vec b\in\mathbb R^m</m>.</p></cell><cell><m>\bigcirc</m></cell><cell><m>\bigcirc</m></cell></row>
+<row valign="top" bottom="none"><cell>d)</cell><cell><p><m>T(\vec x)=A\vec x</m> is an onto linear transform and <m>A\vec x=\vec0</m> has non-trivial solutions.</p></cell><cell><m>\bigcirc</m></cell><cell><m>\bigcirc</m></cell></row>
+<row valign="top" bottom="minor"><cell>e)</cell><cell><p><m>T(\vec x)=A\vec x</m> is a linear transform, <m>\vec x</m> is a vector in <m>\mathbb R^2</m>, <m>A</m> is a <m>2\times2</m> matrix with exactly one pivot, and the only vector in the range of the transform is the zero vector.</p></cell><cell><m>\bigcirc</m></cell><cell><m>\bigcirc</m></cell></row>
+</tabular></statement></exercise>
+<exercise xml:id="exam-1d-q2"><statement><p>(7 points) Indicate <alert>true</alert> if the statement is true, otherwise, indicate <alert>false</alert>.</p>
+<tabular width="100%" top="none" bottom="minor"><col width="5%"/><col width="75%"/><col width="10%" halign="center"/><col width="10%" halign="center"/>
+<row bottom="minor"><cell/><cell/><cell>true</cell><cell>false</cell></row>
+<row valign="top" bottom="none"><cell>a)</cell><cell><p>If <m>\vec e_1</m> and <m>\vec e_2</m> are the standard vectors in <m>\mathbb R^3</m>, and <m>T(\vec x)=A\vec x</m> is a matrix transform that satisfies <m>T(\vec e_1)=T(\vec e_2)=\begin{pmatrix}1\\1\end{pmatrix}</m>, then every entry of <m>A</m> is equal to 1.</p></cell><cell><m>\bigcirc</m></cell><cell><m>\bigcirc</m></cell></row>
+<row valign="top" bottom="none"><cell>b)</cell><cell><p>If <m>A</m> is <m>m\times n</m>, <m>\vec y_1</m> and <m>\vec y_2</m> are vectors in <m>\mathbb R^n</m>, <m>\vec y_1\ne\vec y_2</m>, and <m>A\vec y_1=A\vec y_2</m>, then <m>T_A(\vec x)=A\vec x</m> cannot be onto.</p></cell><cell><m>\bigcirc</m></cell><cell><m>\bigcirc</m></cell></row>
+<row valign="top" bottom="none"><cell>c)</cell><cell><p>If <m>A\vec x=\vec b</m> is consistent, then every column of <m>A</m> must be pivotal.</p></cell><cell><m>\bigcirc</m></cell><cell><m>\bigcirc</m></cell></row>
+<row valign="top" bottom="none"><cell>d)</cell><cell><p>If the only solution to the linear system <m>A\vec x=\vec0</m> is the trivial solution, the columns of <m>A</m> must be linearly independent.</p></cell><cell><m>\bigcirc</m></cell><cell><m>\bigcirc</m></cell></row>
+<row valign="top" bottom="none"><cell>e)</cell><cell><p>Matrix <m>A</m> is <m>3\times5</m>, and <m>A\vec x=\vec b</m> has a solution for all <m>\vec b\in\mathbb R^3</m>. The columns of <m>A</m> span <m>\mathbb R^3</m>.</p></cell><cell><m>\bigcirc</m></cell><cell><m>\bigcirc</m></cell></row>
+<row valign="top" bottom="none"><cell>f)</cell><cell><p>If the linear system <m>A\vec x=\vec b</m> is consistent, then the augmented matrix <m>(A\mid\vec b)</m> does not have a pivot in the last column.</p></cell><cell><m>\bigcirc</m></cell><cell><m>\bigcirc</m></cell></row>
+<row valign="top" bottom="minor"><cell>g)</cell><cell><p>Suppose <m>A</m> and <m>E</m> are <m>n\times n</m> matrices, and <m>\vec x\in\mathbb R^n</m>. If <m>A\vec x=\vec0</m> and <m>A</m> is row equivalent to <m>E</m>, then <m>E\vec x=\vec0</m>.</p></cell><cell><m>\bigcirc</m></cell><cell><m>\bigcirc</m></cell></row>
+</tabular></statement></exercise>
+</page></worksheet>

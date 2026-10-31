@@ -1,0 +1,6 @@
+#!/bin/sh
+# Adapt PreTeXt's XeLaTeX invocation to Tectonic on machines without TeX Live.
+for arg do
+  case "$arg" in *.tex) source_file="$arg";; esac
+done
+exec tectonic --keep-logs "$source_file"
